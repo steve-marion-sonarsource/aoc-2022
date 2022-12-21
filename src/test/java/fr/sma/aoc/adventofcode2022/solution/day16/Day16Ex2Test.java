@@ -27,11 +27,11 @@ class Day16Ex2Test {
 
   @Test
   public void testBitField() {
-    var bitfield = new BitField(20);
-    bitfield.set(5);
-    assert bitfield.get(5);
-    bitfield.reset(5);
-    assert !bitfield.get(5);
+    var bitfield = new BitField(8);
+    bitfield.set(8);
+    assert bitfield.get(8);
+    bitfield.reset(8);
+    assert !bitfield.get(8);
   }
 
 }
