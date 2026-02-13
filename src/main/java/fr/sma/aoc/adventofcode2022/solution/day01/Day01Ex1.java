@@ -1,6 +1,5 @@
 package fr.sma.aoc.adventofcode2022.solution.day01;
 
-import fr.sma.aoc.adventofcode2022.DataFetcher;
 import fr.sma.aoc.adventofcode2022.ExSolution;
 import java.util.Arrays;
 import java.util.stream.Stream;
