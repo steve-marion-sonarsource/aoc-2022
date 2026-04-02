@@ -1,6 +1,5 @@
 package fr.sma.aoc.adventofcode2022;
 
-import fr.sma.aoc.adventofcode2022.DataFetcher;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 import com.google.common.io.Files;
