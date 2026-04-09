@@ -2,11 +2,11 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.0.0'
 	id 'io.spring.dependency-management' version '1.1.0'
+	id "org.sonarqube" version "7.2.3.7755"
 }
 
 group = 'fr.sma.aoc'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '18'
 
 repositories {
 	mavenCentral()
@@ -22,4 +22,27 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+sonar {
+	properties {
+		//property "sonar.projectKey", "the-dna-squad_aoc-2022"
+		//property "sonar.organization", "the-dna-squad"
+    //property "sonar.scanner.engineJarPath", "/Users/steve.marion/IdeaProjects/sonar-scanner-engine/sonarcloud/sonar-scanner-engine/build/libs/sonar-scanner-engine-12.24-SNAPSHOT-all.jar"
+    //property "sonar.projectKey", "steve-marion-sonarsource_aoc-2022"
+    //property "sonar.organization", "steve-marion-sonarsource"
+		property "sonar.verbose", "true"
+    //property "sonar.featureflag.design-architecture-squad-enable-advanced", "true"
+    //property "sonar.featureflag.design-architecture-squad-enable-basic", "true"
+		//property "sonar.host.url", "https://dev19.sc-dev19.io/"
+		//property "sonar.host.url", "https://sc-staging.io/"
+		// Set these for branch and PR analysis:
+		// property "sonar.architecture.enable", "false"
+		//property "sonar.branch.name", "branch-secondary"           						// for branch analysis
+		//property "sonar.branch.name", "short-three"           						// for short lived branch analysis
+		//property "sonar.branch.target", "master"          // for branch analysis (optional)
+		//property "sonar.pullrequest.key", "123"                     // for Pull Request number
+		//property "sonar.pullrequest.branch", "pr-branch"    // the source branch of the PR
+		//property "sonar.pullrequest.base", "master"       // the target branch for the PR
+	}
 }
