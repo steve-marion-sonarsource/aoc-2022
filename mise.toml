@@ -1,2 +1,3 @@
 [tools]
 java = "corretto-17"
+sonar-scanner-cli = "8.1.0.6389"

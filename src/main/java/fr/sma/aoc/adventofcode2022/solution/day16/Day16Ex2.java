@@ -160,6 +160,7 @@ public class Day16Ex2 implements ExSolution {
         }
       }
       counter.incrementAndGet();
+      System.out.println("toto");
       return maxSteam;
     }
   }
